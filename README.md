@@ -4,10 +4,9 @@ Ansible repository for configuring my infrastructure.
 
 #Running the play
 
-Go to plays directory and the execute.
 
 ```
-ansible-playbook -i ../production.ini base.yml
+ansible-playbook -i .production.ini site.yml
 ```
 
 #Contribute
