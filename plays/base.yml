@@ -1,0 +1,6 @@
+---
+
+- name: base.yml | All roles
+  hosts: all
+  roles:
+    - { role: common, tags: ["common"] }

@@ -1,0 +1,8 @@
+---
+- name: install the latest version of ntpdate
+  package: >
+    name=ntpdate
+    state=latest
+  notify:
+    - start ntp
+...
