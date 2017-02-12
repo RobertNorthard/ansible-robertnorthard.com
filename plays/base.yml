@@ -4,5 +4,6 @@
   hosts: all
   roles:
     - { role: common, tags: ["common"] }
+    - { role: harden, tags: ["harden"] }
 
 ...

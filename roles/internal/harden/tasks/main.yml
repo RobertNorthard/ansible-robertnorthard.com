@@ -1,0 +1,45 @@
+---
+
+- name: Disable ICMP broadcast response
+  sysctl:
+    name: net.ipv4.icmp_echo_ignore_broadcasts
+    value: 1
+    sysctl_set: yes
+    reload: yes
+
+- name: Enble bad error message protection
+  sysctl:
+    name: net.ipv4.icmp_ignore_bogus_error_responses
+    value: 1
+    sysctl_set: yes
+    reload: yes
+
+- name: Disable TCP timestamps
+  sysctl:
+    name: net.ipv4.tcp_timestamps
+    value: 0
+    sysctl_set: yes
+    reload: yes
+
+- name: Enable TCP syncookies
+  sysctl:
+    name: net.ipv4.tcp_syncookies
+    value: 1
+    sysctl_set: yes
+    reload: yes
+
+- name: Set tcp synack retries
+  sysctl:
+    name: net.ipv4.tcp_synack_retries
+    value: 2
+    sysctl_set: yes
+    reload: yes
+
+- name: Enable reverse path filtering to prevent IP spoofing
+  sysctl:
+    name: net.ipv4.conf.all.rp_filter
+    value: 1
+    sysctl_set: yes
+    reload: yes
+
+...
