@@ -1,0 +1,9 @@
+---
+
+- name: template motd
+  template:
+    src: templates/motd.j2
+    dest: /etc/issue.net
+    backup: no
+    mode: 0644
+...

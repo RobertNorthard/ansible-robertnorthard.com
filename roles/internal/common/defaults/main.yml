@@ -1,0 +1,3 @@
+---
+os_security_packages_list: ['telnet','gcc','make','telnet-server','rsh-server']
+...
