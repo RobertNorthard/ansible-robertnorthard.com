@@ -1,5 +1,12 @@
 ---
 
+- name: Template ssh banner
+  template:
+    src: templates/banner.j2
+    dest: /etc/issue.net
+    backup: no
+    mode: 0644
+
 - name: Template sshd config
   template: >
     src=templates/sshd.j2
@@ -7,4 +14,5 @@
     backup=yes
     validate='/usr/sbin/sshd -t -f %s'
   notify: reload sshd
+  
 ...

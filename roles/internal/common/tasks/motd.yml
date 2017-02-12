@@ -3,7 +3,8 @@
 - name: Template motd
   template:
     src: templates/motd.j2
-    dest: /etc/issue.net
+    dest: /etc/motd
     backup: no
     mode: 0644
+
 ...
