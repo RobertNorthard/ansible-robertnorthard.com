@@ -2,6 +2,7 @@
 
 - include: tasks/ntpdate.yml
 - include: tasks/motd.yml
+- include: tasks/sshd.yml
 - include: tasks/packages.yml
 
 ...
