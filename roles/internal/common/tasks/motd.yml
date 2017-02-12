@@ -1,6 +1,6 @@
 ---
 
-- name: template motd
+- name: Template motd
   template:
     src: templates/motd.j2
     dest: /etc/issue.net

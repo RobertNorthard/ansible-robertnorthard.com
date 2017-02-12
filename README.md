@@ -6,7 +6,7 @@ Ansible repository for configuring my infrastructure.
 
 
 ```
-ansible-playbook -i .production.ini site.yml
+ansible-playbook -i <environment>.ini site.yml
 ```
 
 #Contribute
