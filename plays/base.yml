@@ -1,6 +1,6 @@
 ---
 
-- name: base.yml | All roles
+- name: base.yml | All nodes
   hosts: all
   roles:
     - { role: common, tags: ["common"] }
