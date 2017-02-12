@@ -28,9 +28,7 @@ RhostsRSAAuthentication no
 HostbasedAuthentication no
 
 PermitEmptyPasswords no
-
 ChallengeResponseAuthentication no
-
 PasswordAuthentication no  
 
 X11Forwarding yes
@@ -48,3 +46,6 @@ AcceptEnv LANG LC_*
 Subsystem sftp /usr/lib/openssh/sftp-server
 
 UsePAM yes
+
+ClientAliveInterval 300
+ClientAliveCountMax 0
