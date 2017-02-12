@@ -1,5 +1,6 @@
 ---
 
 - include: plays/base.yml
+- include: plays/openvpn.yml
 
 ...

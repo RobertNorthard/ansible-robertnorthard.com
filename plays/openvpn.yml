@@ -1,0 +1,8 @@
+---
+
+- name: openvpn.yml | VPN nodes
+  hosts: vpn
+  roles:
+    - { role: openvpn, tags: ["openvpn"] }
+
+...
