@@ -7,4 +7,10 @@
   with_items: 
     - "{{os_security_packages_list}}"
 
+- name: Install packages
+  package: >
+    name={{ item }}
+    state=installed
+  with_items: 
+    - "{{packages}}"
 ...

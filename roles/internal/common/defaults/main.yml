@@ -1,3 +1,5 @@
 ---
-os_security_packages_list: ['telnet','gcc','make','telnet-server','rsh-server']
+os_security_packages_list: ['telnet','gcc','make','telnet-server','rsh-server', 'apache2', 'git', 'tftp-server', 'wolfram-engine', 'curl']
+
+packages: ['uptimed', 'screen', 'vim', 'htop']
 ...
